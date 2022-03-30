@@ -3,7 +3,7 @@
 This is the code associated with the paper : 
 lncRNA atlas of inflammatory diseases along the GI tract highlights regulatory mitochondrial metabolic epithelial functions of GATA6-AS1  
 
-Here you can find only the code itself. rnaSeq data is publiclyy available at the following:
+Here you can find only the code itself. rnaSeq data is publicly available at the following:
 
 
 Rectal UC: PROTECT (GSE10914), RISK rectal (GSE117993)
