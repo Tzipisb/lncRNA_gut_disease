@@ -8,7 +8,7 @@ Here you can find only the code itself. rnaSeq data is publicly available at the
 
 Rectal UC: PROTECT (GSE10914), RISK rectal (GSE117993)
 
-Ileal Crohn's disease: SOURCE (GEO), RISK ileal (GSE101794)
+Ileal Crohn's disease: SOURCE (GSE199906), RISK ileal (GSE101794)
 
 Duodenum Celiac: SEEM (GSE159495), leonard et al. (PRJNA5287557)
 
