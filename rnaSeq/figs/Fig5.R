@@ -1,0 +1,1 @@
+source("/pita/users/tzipi/projects/rnaSeq/lncRNA/rnaSeq/R_analysis/code_for_paper/rnaSeq_source2/random_forest/outcome_RF_fig.R")
