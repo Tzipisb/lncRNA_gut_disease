@@ -1,6 +1,7 @@
 library(shiny)
 library(shinythemes)
 library(ggplot2)
+library(shinysky) 
 library(patchwork)
 source('helpers.R')
 
@@ -13,14 +14,22 @@ data_file = 'data/main6_lncRNA_TPM_v8.rds'
 tpm = readRDS(data_file)
 names(tpm)[names(tpm) == 'Xist'] = 'Xist.exon'
 # names(tpm) = lapply(names(tpm), tolower)
-names(tpm) = lapply(names(tpm), make.names)
+# names(tpm) = lapply(names(tpm), make.names)
+
+gene_names <- gsub("\\.", "-", names(tpm)[8:length(names(tpm))]) 
 
 # Define UI ----
 ui =  fluidPage(theme = shinytheme("flatly"),
   titlePanel("LncRNA Atlas of Inflammatory Diseases Along the GI Tract"),
   sidebarLayout(
-    sidebarPanel("Input",
-                 textInput("lncRNA", label = h3("lncRNA name"), value = "GATA6-AS1"),
+    sidebarPanel(h3("lncRNA name"),  
+                 # textInput("lncRNA", label = h3("lncRNA name"), value = "GATA6-AS1"),
+                 textInput.typeahead(  id = "lncRNA"
+                                       , valueKey = "lncRNA"
+                                       , local = data.frame(lncRNA = c(gene_names))
+                                       , tokens = c(1:length(gene_names))
+                                       , placeholder = "GATA6-AS1"
+                                       , template = HTML("<p>{{lncRNA}}</p>")),
                  
                  hr(),
                  # fluidRow(column(3, verbatimTextOutput("lncRNA"))),
@@ -143,6 +152,10 @@ server = function(input, output)
   
   output$boxplot = renderPlot( { # ggplot()
     lnc = lnc_pos()
+    if(input$lncRNA == '')
+    {
+      lnc=grep( make.names('GATA6-AS1'),names(tpm),ignore.case = T ) 
+    }
     if (input$COHORT != 'Controls')
     {
       
