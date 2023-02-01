@@ -1,0 +1,13 @@
+name: try1
+title:
+username:
+account: tzipi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4328109
+bundleId: 5744045
+url: https://tzipi.shinyapps.io/try1/
+when: 1648630539.89492
+lastSyncTime: 1648630539.89494
+asMultiple: FALSE
+asStatic: FALSE

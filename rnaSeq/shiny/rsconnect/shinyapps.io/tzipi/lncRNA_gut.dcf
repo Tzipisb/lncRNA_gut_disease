@@ -1,0 +1,13 @@
+name: lncRNA_gut
+title: lncRNA_gut
+username:
+account: tzipi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5969606
+bundleId: 6692879
+url: https://tzipi.shinyapps.io/lncRNA_gut/
+when: 1672750825.59551
+lastSyncTime: 1672750825.59554
+asMultiple: FALSE
+asStatic: FALSE
