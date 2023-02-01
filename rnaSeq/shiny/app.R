@@ -177,32 +177,9 @@ server = function(input, output)
       return(g)
     }
   }, height = 250, width = 500 )
-  
-  # output$boxplot2 = renderPlot( { # ggplot()
-  #   tpm3 = tpm2_val()
-  #   lnc = lnc_pos()
-  #   return(make_disease_boxplot(tpm3, lnc))
-  # }, height = 250, width = 250 )
-  # 
-  # temp = unique(metadata_df2$Dx)
-  # pos = which(temp == 'Control')
-  # metadata_df2$Dx = factor(metadata_df2$Dx, levels = c(temp[temp == 'Control'],temp[temp != 'Control']) ) 
-  # 
-  # g = ggplot(tpm2, aes(x=metadata_df2$Dx, y=tpm2[,lnc_pos])) + geom_boxplot() + xlab('') + 
-  #   ylab(sprintf('%s (TPM) in\n%s',{input$lncRNA}, unique(metadata_df2$Source) )) + theme_bw()
-  
-  # output$boxplot = renderPlot( {
-  #   g = ggplot(temp) + geom_boxplot(aes(Dx,lnc)) + theme_bw()
-  #   return(g)
-  # } )
+ 
   
 }
 
 # Run the app ----
 shinyApp(ui = ui, server = server)
-
-# runApp("try1", display.mode = "showcase")
-# 
-# library(rsconnect)
-# rsconnect::deployApp('lncRNA')
-# rsconnect::deployApp()
