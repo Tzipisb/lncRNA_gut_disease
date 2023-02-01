@@ -5,10 +5,6 @@ library(shinysky)
 library(patchwork)
 source('helpers.R')
 
-# ## read and set up general data (not used specific) here, outside the ui/server functions:
-# type = 'lncRNA'
-# temp = data.frame(Dx = c('UC','UC','UC','UC','UC','Control','Control','Control','Control','Control'),
-#                          lnc = 1:10)
 
 data_file = 'data/main6_lncRNA_TPM_v8.rds'
 tpm = readRDS(data_file)
