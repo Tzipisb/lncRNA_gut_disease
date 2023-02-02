@@ -16,6 +16,9 @@ Duodenum Celiac: SEEM (GSE159495), leonard et al. (PRJNA5287557)
 16S PROTECT data is publicly available at PRJNA436359.
 
 
+
+
+
 R sessionInfo:
 
 R version 4.1.2 (2021-11-01)
