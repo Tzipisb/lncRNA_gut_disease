@@ -5,15 +5,20 @@ lncRNA atlas of inflammatory diseases along the GI tract highlights regulatory m
 
 Here you can find the code itself. data is publicly available at the following:
 
-
+### rnaSeq
 Rectal UC: PROTECT (GSE10914), RISK rectal (GSE117993)
+
 Ileal Crohn's disease: SOURCE (GSE199906), RISK ileal (GSE101794)
+
 Duodenum Celiac: SEEM (GSE159495), leonard et al. (PRJNA5287557)
-16S PROTECT data is publicly available at PRJNA436359.
+### 16S
+Fecal UC: PROTECT (PRJNA436359)
+
+Fecal mice DSS induced colitis: PRJNA930578
 
 
-R sessionInfo:
-
+## R session info:
+```
 R version 4.1.2 (2021-11-01)
 Platform: x86_64-pc-linux-gnu (64-bit)
 Running under: Ubuntu 20.04.3 LTS
@@ -80,3 +85,4 @@ loaded via a namespace (and not attached):
 [103] openssl_2.0.5          withr_2.5.0            GenomeInfoDbData_1.2.7
 [106] mgcv_1.8-38            parallel_4.1.2         grid_4.1.2            
 [109] rpart_4.1-15           base64enc_0.1-3        interp_1.1-3 
+```
